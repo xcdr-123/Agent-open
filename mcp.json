@@ -1,0 +1,45 @@
+{
+  "toolsOnly": [
+    "get_exchange_rate",
+    "get_current_time",
+    "list_directory",
+    "read_text_file",
+    "search_files",
+    "get_file_info",
+    "browser_navigate",
+    "browser_snapshot",
+    "browser_click",
+    "browser_take_screenshot"
+  ],
+  "toolsExclude": [],
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\16902\\Desktop\\Agent-open"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
+    },
+    "github": {
+      "disabled": true,
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  }
+}
