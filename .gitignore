@@ -1,0 +1,30 @@
+# ===== 编译产物 =====
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+agent.exe
+
+# ===== Go 依赖 =====
+vendor/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== 运行产物 / 临时 =====
+.playwright-mcp/
+_test_tmp/
+tmp/
+*.log
+
+# ===== 私有证书 / 密钥（绝对不要提交） =====
+ssl.crt
+*.key
+*.pem
+.env
